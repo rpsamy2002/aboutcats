@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home | Cats</title>
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Cats are highly intelligent creatures that have been associated with humans for over 9,500 years.">
+    <meta name="keywords"
+        content="domestic cat, facts, information, pictures, sounds, habitats, reports, news, cat, environment">
+    <meta name="author" content="Palanisamy">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="cat-icon.png">
+
+    <!-- RESET -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- SITE STYLES -->
+    <link rel="stylesheet" href="css/my-catstyles.css">
+
+    <!-- JQUERY -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!--jQUERY for smooth scroll-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!-- FLEX SLIDER -->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <script src="js/jquery.flexslider.js"></script>
+
+    <!-- FLEX SLIDER HOOKUP-->
+    <script>
+        $(document).ready(function () {
+            $('.flexslider').flexslider();
+        });
+    </script>
+
+    <!-- SMOOTH SCROLL -->
+    <script src="js/smooth-scroll.js"></script>
+
+    <!-- CURRENT CLASS -->
+    <script src="js/current-class.js"></script>
+
+    <!-- SLICK NAV -->
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="js/jquery.slicknav.js"></script>
+
+    <!-- SLICK NAV HOOKUP -->
+    <script>
+        $(document).ready(function () {
+            $('#menu').slicknav({
+                label: "",
+                closeOnClick: true
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- CONTAINER -->
+    <main>
+        <!-- HEADER -->
+        <header id="mainHeader">
+            <!-- NAV -->
+            <nav id="mainNav">
+                <ul id="menu">
+                    <li><a href="#home" class="current">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="container">
+            <h1> Home</h1>
+            <div class="col13 fl">
+                <p>
+                    Lorem <strong>ipsum dolor</strong> sit amet, id delectus adipisci vis. Ea probo iriure est, eu
+                    <em>vel velit</em> feugiat torquatos. Mea idque alterum fuisset no, eu qui alii ornatus sapientem.
+                    brute id duo. Vis nihil mandamus mediocritatem at. Albucius accusamus constituto his ne, vim ea
+                    perpetua eloquentiam.Lorem ipsum dolor sit amet, id delectus adipisci vis. Ea probo iriure est, eu
+                    vel velit feugiat torquatos. Mea idque alterum fuisset no, eu qui alii ornatus sapientem. Mea ex
+                    aliquam legimus, esse brute id duo. Vis nihil mandamus mediocritatem at. Albucius accusamus
+                    constituto his ne, vim ea perpetua eloquentiam Mea ex aliquam legimus, esse.
+                </p>
+            </div>
+
+            <div class="col23 fl">
+                <!-- VIDEO  -->
+                <video controls poster="media/cat-1.jpg">
+                    <source src="media/cat-1.mp4" type="video/mp4">
+                    <source src="media/cat-1.webm" type="video/webm">
+                    <source src="media/cat-1.ogv" type="video/ogg">
+                </video>
+            </div>
+        </section>
+
+        <div class="bgWhite">
+            <section id="about" class="container">
+                <h1>About cats</h1>
+
+                <div class="col14 fl">
+                    <h3>Facts about cats</h3>
+                    <p>
+                        Vis nihil <strong>mandamus ipsum</strong> dolor sit amet, id delectus adipisci vis. Ea probo
+                        iriure est, eu vel velit feugiat torquatos. Mea <em>idque alterum</em> fuisset no, eu qui 
+                        alii ornatus sapientem. Mea ex aliquam legimus, esse brute id duo. Vis nihil mandamus mediocritatem at.
+                    </p>
+                </div>
+
+                <div class="col12 fl">
+                    <img src="images/cat-c.jpg" alt="picture of a cat">
+                </div>
+
+                <article class="col14 fl">
+                    <h3>Facts about cats</h3>
+                    <p>
+                        Vis nihil mandamus ipsum dolor sit amet, id delectus adipisci vis. Ea probo iriure est, eu vel
+                        velit feugiat <strong>torquatos.</strong> Mea idque alterum fuisset no, eu qui alii
+                        <em>ornatus sapientem</em>. Mea ex aliquam legimus, esse brute id duo.
+                    </p>
+                </article>
+            </section>
+        </div>
+
+        <div class="bgPhoto1"></div>
+
+        <div class="bgWhite">
+            <section id="gallery" class="container">
+                <h1> Cats: Image gallery</h1>
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/cat-1.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/cat-6.jpg" />
+                        </li>
+                        <li>
+                            <img src="images/cat-3.jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="bgPhoto2"></div>
+
+        <!-- CONTACT FORM and GOOGLE MAP -->
+        <div class="bgWhite">
+            <section id="contact" class="container">
+
+                <div class="col12 fl">
+                    <h2>Contact </h2>
+                    <form action="#" method="post">
+                        <label for="firstName">First name:</label>
+                        <input type="text" name="firstName"><br /><br />
+                        <label for="lastName">Last name:</label>
+                        <input type="text" name="lastName"><br /><br />
+                        <label for="email">Email:</label>
+                        <input type="email"><br /><br />
+                        <label for="message">Message:</label><br /><br />
+                        <textarea cols="24" rows="10" name="message"></textarea><br /><br />
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+
+                <div class="col12 fl">
+                    <h3>Google map</h3>
+                    <div class="embed-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5765.543845308449!2d-
+                               79.6044108!3d43.7360647!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3aff16320f81%
+                               3A0x7a7b8194c93ec42e!2s101%20Westmore%20Dr%2C%20Etobicoke%2C%20ON%20M9V%203Y6
+                               !5e0!3m2!1sen!2sca!4v1576713438616!5m2!1sen!2sca" width="500" height="400"
+                            frameborder="0" style="border:0" allowfullscreen="">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <footer id="mainFooter">
+                    <p class="col33">
+                        &copy; All rights reserved - 2020
+                    </p>
+                </footer>
+            </section>
+        </div>
+
+    </main>
+</body>
+
+</html>
